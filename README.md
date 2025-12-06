@@ -2,6 +2,8 @@
 
 Single-page, high-converting marketing website for Strawvix - a growth & automation partner for local and SME businesses in India.
 
+A modern, high-converting one-page website for Strawvix — built to help service businesses grow through lead generation, automation, and simple, effective systems. Fully responsive, SEO-friendly, and deployable on Cloudflare Pages.
+
 ## 🚀 Features
 
 - **Single-page design** with smooth scrolling navigation
@@ -40,4 +42,3 @@ This site is ready to deploy directly to **Cloudflare Pages**:
 ## 📄 License
 
 © 2024 Strawvix. All rights reserved.
-
