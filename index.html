@@ -472,6 +472,28 @@
             background-color: rgba(255,255,255,0.1);
         }
 
+        /* Dark mode form fixes */
+        .dark .text-gray-900 {
+            color: #fff;
+        }
+        .dark .form-input {
+            background: #0f0f0f;
+            color: #fff;
+            border-color: #333;
+        }
+        .dark .form-input:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.08);
+        }
+        .dark .form-input::placeholder {
+            color: #9ca3af;
+        }
+        .dark #formSuccess {
+            background: #111;
+            border-color: #333;
+            color: #fff;
+        }
+
         .theme-button {
             display: inline-flex;
             align-items: center;
@@ -508,7 +530,7 @@
                             </linearGradient>
                         </defs>
                         <rect x="6" y="6" width="52" height="52" rx="14" fill="none" stroke="url(#logoGradient)" stroke-width="3"/>
-                        <text x="32" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="34" fill="currentColor">a</text>
+                        <text x="32" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="34" fill="currentColor">S</text>
                     </svg>
                     <span class="logo-text">STRAWVIX</span>
                 </a>
@@ -1168,9 +1190,18 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div>
-                    <a href="#hero" class="logo-container logo-footer mb-4">
-                        <div class="logo-s" style="color: #fff;">S</div>
-                        <span class="logo-text">STRAWVIX</span>
+                    <a href="#hero" class="logo-container mb-4">
+                        <svg class="logo-svg text-white" viewBox="0 0 64 64" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="logoGradientFooter" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="currentColor" stop-opacity="0.9"/>
+                                    <stop offset="1" stop-color="currentColor" stop-opacity="0.6"/>
+                                </linearGradient>
+                            </defs>
+                            <rect x="6" y="6" width="52" height="52" rx="14" fill="none" stroke="url(#logoGradientFooter)" stroke-width="3"/>
+                            <text x="32" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="34" fill="currentColor">S</text>
+                        </svg>
+                        <span class="logo-text text-white">STRAWVIX</span>
                     </a>
                     <p class="text-sm text-gray-400 mt-4">Growth & automation for local service businesses.</p>
                 </div>
