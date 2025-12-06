@@ -186,6 +186,46 @@
             font-weight: 700;
             flex-shrink: 0;
         }
+        
+        /* Logo styling */
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logo-svg {
+            height: 40px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-family: 'Times New Roman', serif;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: #000;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-svg {
+                height: 32px;
+            }
+            .logo-text {
+                font-size: 12px;
+            }
+        }
+        
+        /* Footer logo - white version */
+        .logo-footer .logo-svg path,
+        .logo-footer .logo-svg rect {
+            fill: #fff;
+        }
+        
+        .logo-footer .logo-text {
+            color: #fff;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -195,7 +235,22 @@
         <nav class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
-                <a href="#hero" class="text-2xl font-bold text-black">Strawvix</a>
+                <a href="#hero" class="logo-container">
+                    <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Stylized S: Three parallel diagonal stripes forming S shape -->
+                        <!-- Top-left angular corner extension -->
+                        <path d="M5 5 L25 5 L5 25 Z" fill="#000"/>
+                        <!-- Bottom-right angular corner extension -->
+                        <path d="M75 75 L95 75 L95 95 L75 95 Z" fill="#000"/>
+                        <!-- Diagonal stripe 1 - top curve (from top-left, sloping down-right) -->
+                        <rect x="12" y="18" width="11" height="28" transform="rotate(45 17.5 32)" fill="#000"/>
+                        <!-- Diagonal stripe 2 - middle curve (reverses direction, forming S curve) -->
+                        <rect x="28" y="38" width="11" height="28" transform="rotate(-45 33.5 52)" fill="#000"/>
+                        <!-- Diagonal stripe 3 - bottom curve (continues down-right) -->
+                        <rect x="44" y="58" width="11" height="28" transform="rotate(45 49.5 72)" fill="#000"/>
+                    </svg>
+                    <span class="logo-text">STRAWVIX</span>
+                </a>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden lg:flex items-center space-x-8">
@@ -789,8 +844,23 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div>
-                    <div class="text-2xl font-bold text-white mb-4">Strawvix</div>
-                    <p class="text-sm text-gray-400">Growth & automation for local service businesses.</p>
+                    <a href="#hero" class="logo-container logo-footer mb-4">
+                        <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Stylized S: Three parallel diagonal stripes forming S shape -->
+                            <!-- Top-left angular corner extension -->
+                            <path d="M5 5 L25 5 L5 25 Z" fill="#fff"/>
+                            <!-- Bottom-right angular corner extension -->
+                            <path d="M75 75 L95 75 L95 95 L75 95 Z" fill="#fff"/>
+                            <!-- Diagonal stripe 1 - top curve (from top-left, sloping down-right) -->
+                            <rect x="12" y="18" width="11" height="28" transform="rotate(45 17.5 32)" fill="#fff"/>
+                            <!-- Diagonal stripe 2 - middle curve (reverses direction, forming S curve) -->
+                            <rect x="28" y="38" width="11" height="28" transform="rotate(-45 33.5 52)" fill="#fff"/>
+                            <!-- Diagonal stripe 3 - bottom curve (continues down-right) -->
+                            <rect x="44" y="58" width="11" height="28" transform="rotate(45 49.5 72)" fill="#fff"/>
+                        </svg>
+                        <span class="logo-text">STRAWVIX</span>
+                    </a>
+                    <p class="text-sm text-gray-400 mt-4">Growth & automation for local service businesses.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-white mb-4">Services</h4>
